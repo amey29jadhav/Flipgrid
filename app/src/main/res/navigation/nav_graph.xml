@@ -9,7 +9,11 @@
         android:id="@+id/signupFragment"
         android:name="com.amey.flipgrid.ui.view.SignupFragment"
         android:label="fragment_signup"
-        tools:layout="@layout/fragment_signup" />
+        tools:layout="@layout/fragment_signup" >
+        <action
+            android:id="@+id/action_signupFragment_to_confirmationFragment"
+            app:destination="@id/confirmationFragment" />
+    </fragment>
     <fragment
         android:id="@+id/splashFragment"
         android:name="com.amey.flipgrid.ui.view.SplashFragment"
@@ -20,4 +24,9 @@
             app:destination="@id/signupFragment"
             app:enterAnim="@anim/slide_in_left"/>
     </fragment>
+    <fragment
+        android:id="@+id/confirmationFragment"
+        android:name="com.amey.flipgrid.ui.view.ConfirmationFragment"
+        android:label="fragment_confirmation"
+        tools:layout="@layout/fragment_confirmation" />
 </navigation>

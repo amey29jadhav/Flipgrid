@@ -3,6 +3,7 @@ package com.amey.flipgrid.ui.view;
 import android.os.Bundle;
 
 import androidx.fragment.app.Fragment;
+import androidx.navigation.NavOptions;
 import androidx.navigation.Navigation;
 
 import android.os.Handler;
@@ -78,7 +79,7 @@ public class SplashFragment extends Fragment {
         new Handler().postDelayed(new Runnable() {
             @Override
             public void run() {
-                Navigation.findNavController(view).navigate(R.id.action_splashFragment_to_signupFragment);
+                Navigation.findNavController(view).navigate(R.id.action_splashFragment_to_signupFragment,null,new NavOptions.Builder().setPopUpTo(R.id.splashFragment,true).build());
             }
         },SPLASH_TIME_OUT);
     }

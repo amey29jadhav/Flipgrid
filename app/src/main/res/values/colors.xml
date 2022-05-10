@@ -3,15 +3,15 @@
     <color name="colorPrimary">#221673</color>
     <color name="purple_500">#FF6200EE</color>
     <color name="purple_700">#FF3700B3</color>
-    <color name="teal_200">#FF03DAC5</color>
-    <color name="teal_700">#FF018786</color>
+    <color name="teal_200">#221673</color>
+    <color name="teal_700">#221673</color>
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
     <color name="border_color">#e7e6ee</color>
 
-    <color name="text_color">#8da5f3</color>
-    <color name="box_selected_bg_color">#c2cefd</color>
-    <color name="box_normal_bg_color">#c5c0df</color>
-    <color name="box_heading_title_color">#8a84b5</color>
+    <color name="text_color">#afbef3</color>
+    <color name="box_selected_bg_color">#d5dffc</color>
+    <color name="box_normal_bg_color">#e1dee8</color>
+    <color name="box_heading_title_color">#7e78a5</color>
 </resources>
 

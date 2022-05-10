@@ -4,9 +4,24 @@
     <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="email">E-Mail</string>
     <string name="email_hint">youremail@gmail.com</string>
+    <string name="password_hint">password</string>
+    <string name="username_hint">username</string>
+    <string name="website_hint">website</string>
+
     <string name="first_name">First Name</string>
     <string name="password">Password</string>
     <string name="website">Website</string>
     <string name="signup">SIGN UP</string>
+    <string name="required">Required</string>
+    <string name="email_error">E-Mail cannot be empty</string>
+    <string name="invalid_email_error">Invalid E-Mail Id</string>
+    <string name="password_error">Password cannot be empty</string>
+    <string name="sign_up">Sign Up</string>
+    <string name="success">Success!</string>
+    <string name="success_desc">Your super-awesome portfolio has been successfully submitted! The details below will be public with your community</string>
+    <string name="username_placeholder">Hello, %1$s!</string>
+    <string name="default_url">www.google.com</string>
+    <string name="invalid_web">Invalid Web Address</string>
+
 
 </resources>

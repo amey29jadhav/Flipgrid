@@ -18,6 +18,7 @@
         android:textColor="@android:color/white"
         android:layout_centerHorizontal="true"
         android:textSize="45sp"
+        android:fontFamily="@font/roboto_bold"
         android:layout_marginTop="75dp"/>
     <com.airbnb.lottie.LottieAnimationView
         android:layout_below="@+id/iv_wavebg"
