@@ -8,20 +8,21 @@
 
     <RelativeLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="15dp"
         android:background="@android:color/white">
 
         <androidx.appcompat.widget.AppCompatTextView
             android:id="@+id/singupTextView"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginLeft="15dp"
+            android:layout_marginStart="15dp"
             android:paddingTop="15dp"
             android:paddingBottom="15dp"
             android:text="@string/sign_up"
             android:fontFamily="@font/roboto_bold"
             android:textColor="@color/colorPrimary"
-            android:textSize="30sp" />
+            android:textSize="45sp" />
 
         <ImageView
             android:id="@+id/backgroundImageView"
@@ -160,7 +161,7 @@
             android:layout_marginTop="5dp"
             android:textColor="@color/colorPrimary"
             android:fontFamily="@font/roboto_bold"
-            android:textSize="12sp"></androidx.appcompat.widget.AppCompatTextView>
+            android:textSize="12sp" />
 
         <androidx.appcompat.widget.AppCompatButton
             android:id="@+id/submitButton"
@@ -172,6 +173,6 @@
             android:fontFamily="@font/roboto_bold"
             android:background="@drawable/button_background"
             android:text="@string/signup"
-            android:textColor="@color/white"></androidx.appcompat.widget.AppCompatButton>
+            android:textColor="@color/white" />
     </RelativeLayout>
 </ScrollView>

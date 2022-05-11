@@ -10,7 +10,8 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Flipgrid">
         <activity android:name=".ui.view.MainActivity"
-            android:windowSoftInputMode="adjustUnspecified">
+            android:windowSoftInputMode="adjustUnspecified"
+            android:configChanges="orientation|screenSize">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

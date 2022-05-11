@@ -6,12 +6,13 @@
     <string name="email_hint">youremail@gmail.com</string>
     <string name="password_hint">password</string>
     <string name="username_hint">username</string>
-    <string name="website_hint">website</string>
+    <string name="website_hint">https://www.google.com</string>
 
     <string name="first_name">First Name</string>
     <string name="password">Password</string>
     <string name="website">Website</string>
     <string name="signup">SIGN UP</string>
+    <string name="signin">SIGN IN</string>
     <string name="required">Required</string>
     <string name="email_error">E-Mail cannot be empty</string>
     <string name="invalid_email_error">Invalid E-Mail Id</string>

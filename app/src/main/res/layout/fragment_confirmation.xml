@@ -1,96 +1,111 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
     tools:context=".ui.view.ConfirmationFragment">
 
-    <ImageView
-        android:id="@+id/leftArrowImageView"
-        android:layout_width="30dp"
-        android:layout_height="30dp"
-        android:background="@drawable/angle_left"
-        android:layout_margin="15dp"
-        app:tint="@color/colorPrimary"
-        android:layout_alignParentTop="true"/>
+    <include
+        android:id="@+id/loadingContainer"
+        layout="@layout/loading_page" />
 
-    <androidx.appcompat.widget.AppCompatTextView
-        android:id="@+id/successTextView"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:paddingTop="15dp"
-        android:paddingBottom="15dp"
-        android:text="@string/success"
-        android:fontFamily="@font/roboto_bold"
-        android:textColor="@color/colorPrimary"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="100dp"
-        android:textSize="30sp" />
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
 
-    <ImageView
-        android:id="@+id/backgroundImageView"
-        android:layout_below="@+id/successTextView"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_centerHorizontal="true"
-        android:background="@drawable/success" />
+        <RelativeLayout
+            android:id="@+id/mainView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:visibility="gone">
 
-    <androidx.appcompat.widget.AppCompatTextView
-        android:id="@+id/username"
-        android:layout_below="@+id/backgroundImageView"
-        android:layout_centerHorizontal="true"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:textColor="@color/colorPrimary"
-        android:fontFamily="@font/roboto_bold"
-        android:gravity="center"
-        android:textSize="30sp" />
-    <androidx.appcompat.widget.AppCompatTextView
-        android:id="@+id/successDesc"
-        android:layout_below="@+id/username"
-        android:layout_centerHorizontal="true"
-        android:layout_margin="15dp"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:textColor="@color/box_heading_title_color"
-        android:fontFamily="@font/roboto_regular"
-        android:gravity="center"
-        android:text="@string/success_desc"
-        android:textSize="15sp" />
-    <androidx.appcompat.widget.AppCompatTextView
-        android:id="@+id/emailConfirmationTextView"
-        android:layout_below="@+id/successDesc"
-        android:layout_centerHorizontal="true"
-        android:layout_margin="5dp"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:textColor="@color/colorPrimary"
-        android:fontFamily="@font/roboto_bold"
-        android:gravity="center"
-        android:textSize="15sp" />
-    <androidx.appcompat.widget.AppCompatTextView
-        android:id="@+id/userNameConfirmationTextView"
-        android:layout_below="@+id/emailConfirmationTextView"
-        android:layout_centerHorizontal="true"
-        android:layout_margin="5dp"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:textColor="@color/colorPrimary"
-        android:fontFamily="@font/roboto_bold"
-        android:gravity="center"
-        android:textSize="15sp" />
-    <androidx.appcompat.widget.AppCompatTextView
-        android:id="@+id/websiteConfirmationTextView"
-        android:layout_below="@+id/userNameConfirmationTextView"
-        android:layout_centerHorizontal="true"
-        android:layout_margin="5dp"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:textColor="@color/colorPrimary"
-        android:fontFamily="@font/roboto_bold"
-        android:autoLink="web"
-        android:textColorLink="@color/colorPrimary"
-        android:gravity="center"
-        android:textSize="15sp" />
+            <ImageView
+                android:id="@+id/leftArrowImageView"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_alignParentTop="true"
+                android:layout_margin="20dp"
+                android:background="@drawable/angle_left" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/successTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="100dp"
+                android:fontFamily="@font/roboto_bold"
+                android:paddingTop="15dp"
+                android:paddingBottom="15dp"
+                android:text="@string/success"
+                android:textColor="@color/colorPrimary"
+                android:textSize="45sp" />
+
+            <ImageView
+                android:id="@+id/backgroundImageView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/successTextView"
+                android:layout_centerHorizontal="true"
+                android:background="@drawable/success" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/username"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/backgroundImageView"
+                android:layout_centerHorizontal="true"
+                android:fontFamily="@font/roboto_bold"
+                android:gravity="center"
+                android:textColor="@color/colorPrimary"
+                android:textSize="30sp" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/successDesc"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/username"
+                android:layout_centerHorizontal="true"
+                android:layout_margin="15dp"
+                android:fontFamily="@font/roboto_regular"
+                android:gravity="center"
+                android:text="@string/success_desc"
+                android:textColor="@color/box_heading_title_color"
+                android:textSize="15sp" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/emailConfirmationTextView"
+                style="@style/DescText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/successDesc" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/userNameConfirmationTextView"
+                style="@style/DescText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/emailConfirmationTextView" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/websiteConfirmationTextView"
+                style="@style/DescText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/userNameConfirmationTextView"
+                android:autoLink="web"
+                android:textColorLink="@color/colorPrimary" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/submitButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/websiteConfirmationTextView"
+                android:layout_margin="15dp"
+                android:background="@drawable/button_background"
+                android:fontFamily="@font/roboto_bold"
+                android:text="@string/signup"
+                android:textColor="@color/white" />
+        </RelativeLayout>
+    </ScrollView>
 </RelativeLayout>
