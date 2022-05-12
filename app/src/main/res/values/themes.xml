@@ -39,7 +39,7 @@
     </style>
 
     <style name="EditTextStyle">
-        <item name="android:textColorHint">#efecf3</item>
+        <item name="android:textColorHint">@color/box_normal_bg_color</item>
         <item name="android:textColor">@color/text_color</item>
         <item name="maxLines">1</item>
         <item name="android:textCursorDrawable">@null</item>

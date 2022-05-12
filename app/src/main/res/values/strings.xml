@@ -14,9 +14,9 @@
     <string name="signup">SIGN UP</string>
     <string name="signin">SIGN IN</string>
     <string name="required">Required</string>
-    <string name="email_error">E-Mail cannot be empty</string>
-    <string name="invalid_email_error">Invalid E-Mail Id</string>
-    <string name="password_error">Password cannot be empty</string>
+    <string name="email_error">Enter an email</string>
+    <string name="invalid_email_error">Invalid email</string>
+    <string name="password_error">Enter a password</string>
     <string name="sign_up">Sign Up</string>
     <string name="success">Success!</string>
     <string name="success_desc">Your super-awesome portfolio has been successfully submitted! The details below will be public with your community</string>

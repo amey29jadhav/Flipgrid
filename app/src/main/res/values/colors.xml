@@ -11,7 +11,7 @@
 
     <color name="text_color">#afbef3</color>
     <color name="box_selected_bg_color">#afbef3</color>
-    <color name="box_normal_bg_color">#e1dee8</color>
+    <color name="box_normal_bg_color">#e3dfea</color>
     <color name="box_heading_title_color">#7e78a5</color>
 </resources>
 

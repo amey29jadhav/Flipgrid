@@ -15,7 +15,6 @@ import androidx.annotation.NonNull;
 import androidx.core.content.ContextCompat;
 import androidx.fragment.app.Fragment;
 import androidx.lifecycle.ViewModelProvider;
-import androidx.navigation.fragment.NavHostFragment;
 
 import com.amey.flipgrid.R;
 import com.amey.flipgrid.databinding.FragmentConfirmationBinding;
@@ -91,6 +90,11 @@ public class ConfirmationFragment extends Fragment {
             String text = String.format(res.getString(R.string.username_placeholder), profileViewModel.get_userName());
             fragmentConfirmationBinding.username.setText(text);
             fragmentConfirmationBinding.userNameConfirmationTextView.setText(profileViewModel.get_userName());
+        }else{
+            Resources res = getResources();
+            String text = String.format(res.getString(R.string.username_placeholder), "User");
+            fragmentConfirmationBinding.username.setText(text);
+            fragmentConfirmationBinding.userNameConfirmationTextView.setText("User");
         }
 
         if (profileViewModel.get_userWebsite() != null && !profileViewModel.get_userWebsite().isEmpty()) {
