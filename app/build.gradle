@@ -3,19 +3,19 @@ plugins {
 }
 
 android {
-    compileSdkVersion 30
+    compileSdkVersion 31
     buildToolsVersion "31.0.0"
 
     defaultConfig {
         applicationId "com.amey.flipgrid"
-        minSdkVersion 19
+        minSdkVersion 23
         targetSdkVersion 30
         versionCode 1
         versionName "1.0"
 
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
 
-        viewBinding {
+         viewBinding {
             enabled = true
         }
     }
@@ -50,4 +50,7 @@ dependencies {
 
     //Lottie SDK
     implementation 'com.airbnb.android:lottie:3.4.1'
+
+    // Splash screen API
+    implementation 'androidx.core:core-splashscreen:1.0.0-beta02'
 }

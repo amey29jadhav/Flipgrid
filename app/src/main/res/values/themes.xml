@@ -31,7 +31,7 @@
     </style>
     <style name="BoxTitle">
         <item name="android:textColor">@color/box_heading_title_color</item>
-        <item name="android:textSize">12sp</item>
+        <item name="android:textSize">14sp</item>
         <item name="android:layout_marginTop">10dp</item>
         <item name="android:layout_marginBottom">10dp</item>
         <item name="android:layout_marginLeft">15dp</item>
@@ -44,6 +44,18 @@
         <item name="maxLines">1</item>
         <item name="android:textCursorDrawable">@null</item>
         <item name="fontFamily">@font/roboto_regular</item>
+    </style>
+
+    <style name="Theme.CustomSplashScreenTheme" parent="Theme.SplashScreen">
+        // Set the splash screen background, animated icon, and animation duration.
+        <item name="windowSplashScreenBackground">@color/colorPrimary</item>
+
+        // Use windowSplashScreenAnimatedIcon to add either a drawable or an
+        // animated drawable. One of these is required.
+        <item name="windowSplashScreenAnimatedIcon">@drawable/logo</item>
+        <item name="windowSplashScreenAnimationDuration">1000</item>
+        // Set the theme of the Activity that directly follows your splash screen.
+        <item name="postSplashScreenTheme">@style/Theme.Flipgrid</item>  # Required.
     </style>
     
 </resources>
